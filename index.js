@@ -1,5 +1,4 @@
 const drivers = [
-<<<<<<< HEAD
   {
     name: 'Bobby',
     hometown: 'Pittsburgh' },
@@ -41,38 +40,3 @@ function matchName(arrayOfObjects, string){
 findMatching(driversNames, "Bobby")
 fuzzyMatch(driversNames,"Sa" )
 matchName(drivers,"Bobby")
-=======
-    {
-      name: 'Bobby',
-      hometown: 'Pittsburgh' },
-    {
-      name: 'Sammy',
-      hometown: 'New York' } ,
-    {
-      name: 'Sally',
-      hometown: 'Cleveland' },
-    {
-      name: 'Annette',
-      hometown: 'Los Angeles' },
-    {
-      name: 'Bobby',
-      hometown: 'Tampa Bay' }
-  ];
-let arrOfName = []; 
-
-for(const val of drivers) {
-	arrOfName.push(val.name); 
-}
-function findMatching(arrayOfObjects, string) {
-  let res = arrayOfObjects.filter(val => {
-    return (val && (val === string || val.toLowerCase().includes(string.toLowerCase())))
-  });
-
-  return res;
-
-
-}
-
-findMatching(arrOfName, "Bobby")
-
->>>>>>> d79e514b5c8879eb5bb8de7606e647bca3d37c43
